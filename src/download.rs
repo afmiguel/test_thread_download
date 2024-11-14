@@ -9,9 +9,6 @@ use std::path::Path;
 /// * `url` - Base URL where the file is hosted.
 /// * `filename` - Name of the file to be downloaded and saved locally.
 pub fn download_file(url: &str, filename: &str) {
-    // Print message indicating which file is being downloaded
-    print!("Downloading {} ... ", &filename);
-    io::stdout().flush().unwrap(); // Ensure the message is immediately printed
 
     // Send a GET request to the server to retrieve the file
     let mut resp = reqwest::blocking::get(format!("{}/{}", url, filename))
@@ -31,5 +28,5 @@ pub fn download_file(url: &str, filename: &str) {
     io::copy(&mut resp, &mut out).expect("Failed to copy content");
 
     // Print success message
-    println!("OK!");
+    println!("Download {} OK! ", &filename);
 }

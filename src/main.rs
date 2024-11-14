@@ -2,7 +2,7 @@ use std::time::{Duration, Instant};
 mod download;
 use download::download_file;
 
-const URL: &str = "http://arquivos.afonsomiguel.com";
+const URL: &str = "https://arquivos.afonsomiguel.com";
 
 fn main() {
     let filename_list = vec![
@@ -27,5 +27,4 @@ fn main() {
         duration.as_millis() as f32 / 1000.
     );
 }
-
 
