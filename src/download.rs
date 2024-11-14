@@ -1,6 +1,5 @@
 use std::fs::File;
 use std::io;
-use std::io::Write;
 use std::path::Path;
 
 /// Downloads a file from the specified URL and saves it to the local directory.

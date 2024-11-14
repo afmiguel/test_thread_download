@@ -2,7 +2,7 @@ use std::time::{Duration, Instant};
 mod download;
 use download::download_file;
 
-const URL: &str = "https://arquivos.afonsomiguel.com";
+const URL: &str = "https://royalcast.com.br/files";
 
 fn main() {
     let filename_list = vec![
