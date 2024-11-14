@@ -18,7 +18,7 @@ pub fn download_file(url: &str, filename: &str) {
         .expect("Failed to send request");
 
     // Define the path where the downloaded file will be saved
-    let str_path = format!("downloads/{}", filename);
+    let str_path = format!("downloads");
     let path = Path::new(str_path.as_str());
 
     // Create the "downloads" directory if it doesn't already exist
