@@ -2,10 +2,11 @@ use std::time::{Duration, Instant};
 mod download;
 use download::download_file;
 
-const URL: &str = "https://royalcast.com.br/files";
+const URL: &str = "https://afmiguel.github.io/large_imgs_test/";
 
 fn main() {
     let filename_list = vec![
+        "arquivo_0.jpg",
         "arquivo_1.jpg",
         "arquivo_2.jpg",
         "arquivo_3.jpg",
